@@ -1,217 +1,232 @@
 /*
-
-Largest screen size
-
+    LARGEST SCREEN SIZE
 */
 
+/*  FONTS   */
 
 h1 {
-
-  font-size: 15vw;
+  font-size: 30px;
   margin: 0px;
   padding: 0px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 h2 {
-  font-size: 4vw;
-  font-family: 'Open Sans', sans-serif;
-  margin: 0px;
+  font-size: 50px;
   padding: 0px;
 }
 
-h3 {font-size: 6vw;
+h3 {
+  font-size: 30px;
   font-family: 'Open Sans', sans-serif;
   margin: 0px;
   padding: 0px;
 }
 
 h4 {
-  font-size: 3vw;
+  font-size: 20px;
 }
 
 h5 {
-  font-size: 3vw;
+  font-size: 15px;
 }
 
 p {
-  font-size: 1vw;
+  font-size: 10px;
   line-height: 60px;
   font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: #ba0044;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ba0044;
 }
 
 .font_colour {
   color: #282C34;
 }
 
-body a {
-  text-decoration: none;
-
+.handwriting {
+  font-family: 'Pacifico', cursive;
+  color: #ba0044;
 }
 
-@media only screen and (max-width: 2560px) {
-  #wrapper {
-  max-width: 70%;
-  margin: 0 auto;
-  float: none;
-    }
-
-    h1 {
-
-      font-size: 10vw;
-      margin: 0px;
-      padding: 0px;
-    }
-
-#navigation li {
-  list-style: none;
-  display: inline;
-  margin: 5 15;
-  float: right;
+.skills {
+  font-family: 'Roboto Slab', serif;
+  font-size: 50px;
+  line-height: 80px;
 }
 
-#navigation a {
-  color: white;
-}
-
-navigation a, a:visited {
-  color: white;
+body {
+  background-color: white;
 }
 
 #title_div {
   background-color: #282C34;
   height: 55vh;
-  box-sizing: border-box;
-  padding: 10% 0%;
-  margin-bottom: 20vh;
   color: white;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
+#wrapper {
+  width: 70%;
+  margin: 0 auto;
+  float: none;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: 40px;
+  }
+
 #first_block {
-  width: 100%;
-  display: block;
-  padding-bottom: 60px;
-  margin-top: 40px;
-  margin-bottom: 60px;
-  clear: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+  height: 200px;
 }
 
 #image_div {
-  width: 90%;
   margin-bottom: 100px;
-  padding 0 30px;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
 }
 
 #profile_image {
   max-width: 100%;
-  margin: 0 auto;
 }
 
 #about_me {
-  width: 100%;
-  float: left;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  background-color: #F6F6F6;
-  min-height: 35vh;
-  max-height: 40vh;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  padding-left: 5%;
-  padding-right: 5;
-  margin-top: 10%;
 }
 
- #marvel_chapter {
-   float: left;
-   text-align: center;
-   width: 100%;
-   background-color: #F6F6F6;
-   min-height: 60vh;
-   box-sizing: border-box;
-   padding-top: 40px;
-   padding-bottom: 30px;
-   padding-left: 40px;
-   padding-right: 40px;
- }
-
-#next-steps {
-  width: 100%;
-  height: 300px;
-  float: left;
+#background {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  background-color: #F6F6F6;
-  min-height: 45vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   box-sizing: border-box;
-  padding-top: 40px;
-  padding-bottom: 30px;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
-#soft_skills {
-min-height: 400px;
-max-height: 500px;
+#projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#hard_skills_title {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 #hard_skills {
-  float: left;
-  text-align: center;
   width: 100%;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, minmax(250px, 1fr));
+  grid-row-gap: 60px;
+}
+
+#javascript {
+    background-color: #40b69c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#python {
+    background-color: #fa5758;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
 #testing {
-  float: left;
-  display: inline;
-  width: 100%;
-
-}
-#python {
-  float: left;
-  display: inline;
-  width: 100%;
-
+  background-color: #2a495d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 
 #django {
-  float: left;
-  width: 100%;
-
+  background-color: #ed8b36;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
 }
 
-#salesforce {
-  float: left;
-  display: inline;
-  width: 100%;
+.a {
+  width: 40%;
+}
+
+.b {
+
+  width: 60%;
 }
 
 #soft_skills {
   float: left;
-  width: 100%;
-  min-height: 400px;
-  max-height: 500px;
   display: block;
   text-align: center;
-  background-color: #F6F6F6;
 }
 
 #find_me {
-  float: left;
   text-align: center;
-  width: 100%;
 }
 
+.dark_background {
+  background-color: #3A3B3F;
+  color: white;
+  box-sizing: border-box;
+  min-height: 300px;
+  max-height: 350px;
+  width: 31%;
+  margin: 1%;
+  padding: 1%;
+  display: inline-block;
+  float: left;
+}
+
+
 #links-1{
-  width: 100%;
   text-align: center;
   clear: left;
 }
 
-}
 #twitter:hover {
   color: #282C34;
   background-color: #C8E7EB;
@@ -242,20 +257,6 @@ max-height: 500px;
   background-color: #C8E7EB;
 }
 
-.dark_background {
-  background-color: #3A3B3F;
-  color: white;
-  box-sizing: border-box;
-  min-height: 300px;
-  max-height: 350px;
-  width: 31%;
-  margin: 1%;
-  padding: 1%;
-  display: inline-block;
-  float: left;
-}
-
-
 #footer {
   clear: left;
   float: left;
@@ -266,279 +267,231 @@ max-height: 500px;
   padding-top: 5%;
   padding-bottom: 10%;
   background-color: #F6F6F6;
-  }
+}
+
+@media only screen and (max-width: 2560px) {
+
+h1 {
+  font-size: 10vw;
+}
+
+h5 {
+  font-size: 30px;;
+}
+
 }
 
 
 @media only screen and (max-width: 2200px) {
-  #wrapper {
 
-    }
-
-    #title_div {
-      max-height: 70vh;
-      box-sizing: border-box;
-      padding: 10% 0%;
-      margin-bottom: 10vh;
-    }
-
-    #marvel_chapter {
-      height: 700px;
-    }
-
-    #next-steps {
-
-      min-height: 20px;
-      max-height: 300px;
-      padding-bottom: 5%;
-    }
-
-    #soft_skills {
-      min-height: 400px;
-      max-height: 500px;
-    }
-
-    .dark_background {
-      background-color: #3A3B3F;
-      color: white;
-      box-sizing: border-box;
-      min-height: 200px;
-      max-height: 250px;
-      width: 45%;
-      margin: 2.5%;
-      padding: 2%;
-      display: inline-block;
-      float: left;
-    }
-
+.dark_background {
+  min-height: 200px;
+  max-height: 250px;
+  width: 45%;
+  margin: 2.5%;
+  padding: 2%;
+  }
 }
 
 
 @media only screen and (max-width:1900px) {
-  #wrapper {
-    }
 
-    p {
-      font-size: 2vw;
-      line-height: 40px;
-      font-family: 'Open Sans', sans-serif;
-    }
-    #title_div {
-      height: 45vh;
-      box-sizing: border-box;
-      padding: 10% 0%;
-      margin-bottom: 10vh;
-    }
-
-    #about_me {
-      max-height: 55vh;
-    }
-
-    #marvel_chapter {
-      height: 900px;
-    }
-
-    #next-steps {
-      min-height: 20px;
-      max-height: 400px;
-      padding: 0;
-      margin: 0;
-
-    }
-
-    #soft_skills {
-      min-height: 400px;
-      max-height: 500px;
-    }
-
-    .dark_background {
-      background-color: #3A3B3F;
-      color: white;
-      box-sizing: border-box;
-      min-height: 200px;
-      max-height: 250px;
-      width: 45%;
-      margin: 2.5%;
-      padding: 2%;
-      display: inline-block;
-      float: left;
-    }
-
+p {
+  font-size: 20px;;
+  line-height: 40px;
 }
+
+h2 {
+  margin: 10px;
+}
+
+h3 {
+  margin: 10px;
+}
+
+h4 {
+  font-size: 30px;
+}
+
+.dark_background {
+  min-height: 180px;
+  max-height: 210px;
+  width: 45%;
+  margin: 2.5%;
+  padding: 2%;
+  display: inline-block;
+  float: left;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
-  #wrapper {
+
+#wrapper {
   min-width: 95%;
-    }
-
-    p {
-      font-size: 3vw;
-      line-height: 40px;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    h2 {
-      font-size: 5vw;
-      line-height: 70px;
-      font-family: 'Open Sans', sans-serif;
-    }
-
-    h4 {
-      font-size: 4vw;
-      line-height: 40px;
-      font-family: 'Open Sans', sans-serif;
-    }
-    h5 {
-      font-size: 5vw;
-      line-height: 10px;
-      font-family: 'Open Sans', sans-serif;
-    }
-    #title_div {
-      background-color: #282C34;
-      height: 30vh;
-      box-sizing: border-box;
-      padding: 10% 0%;
-      margin-bottom: 20vh;
-      color: white;
-      text-align: center;
-    }
-
-    #footer {
-
-    }
-
-    #title_div {
-      max-height: 70vh;
-      box-sizing: border-box;
-      padding: 15% 0%;
-      margin-bottom: 10vh;
-    }
-  #about_me {
-    padding: 10% 2% 3% 2%;
-  }
-
-    #marvel_chapter {
-      height: 1000px;
-
-    }
-
-    #next-steps {
-      min-height: 20px;
-      max-height: 400px;
-      padding: 0;
-      margin: 0;
-    }
-
-    #soft_skills {
-      min-height: 400px;
-      max-height: 500px;
-    }
-
-    #find_me {
-    padding-top: 5%;
-    min-height: 8vh;
-    }
-    .dark_background {
-      background-color: #3A3B3F;
-      color: white;
-      box-sizing: border-box;
-      min-height: 200px;
-      max-height: 250px;
-      width: 45%;
-      margin: 2.5%;
-      padding: 3% 0;
-      display: inline-block;
-      float: left;
-    }
 }
 
-@media only screen and (max-width: 500px) {
-  p {
-    font-size: 3.5vw;
-    line-height: 35px;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  h2 {
-    font-size: 5vw;
-    line-height: 40px;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  h4 {
-    font-size: 4vw;
-    line-height: 40px;
-    font-family: 'Open Sans', sans-serif;
-  }
-  h5 {
-    font-size: 9vw;
-    line-height: 40px;
-    font-family: 'Open Sans', sans-serif;
-  }
-
-  #wrapper {
-
-    min-width: 100%;
-    }
-
-    #title_div {
-      background-color: #282C34;
-      max-height: 200px;
-      box-sizing: border-box;
-      padding: 80px 0px 50px 0px;
-      margin-bottom: 10px;
-      color: white;
-      text-align: center;
-    }
-#first_block {
-
-margin-bottom: 3%;
+p {
+  font-size: 3vw;
+  line-height: 40px;
 }
 
-#image_div {
-  margin-bottom: 10%;
+h2 {
+  font-size: 5vw;
+  line-height: 70px;
+  margin: 10px;
 }
-#about_me {
-  min-height: 25vh;
+
+h4 {
+  font-size: 4vw;
+  line-height: 40px;
+}
+
+h5 {
+  font-size: 20px;
+  line-height: 30px;
+}
+#title_div {
+  height: 300px;
+}
+
+.dark_background {
+  min-height: 180px;
+  max-height: 200px;
+  width: 45%;
+  margin: 2.5%;
+  padding: 3% 0;
+  display: inline-block;
+  float: left;
+}
+
+#footer {
+  min-height: 100px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+p {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+h1 {
+  font-size: 35px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 0px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 80px;
+}
+
+#title_div {
+  height: 250px;
+}
+
+#wrapper {
+  grid-template-rows: minmax(150px, 1fr);
+  }
+
+#javascript {
+    flex-direction: column;
+}
+
+#python {
+  flex-direction: column;
+}
+
+#testing {
+  flex-direction: column;
+}
+
+#django {
+  flex-direction: column;
+}
+
+.a {
+  width: 100%;
+  min-height: 100px;
+}
+
+.b {
+  width: 100%;
+}
+
+.dark_background {
   box-sizing: border-box;
-  padding-top: 40px;
-  padding-bottom: 10px;
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-top: 60px;
+  min-height: 200px;
+  max-height: 250px;
+  width: 95%;
+  margin: 2.5%, auto ;
+  padding: 10%;
+  display: inline-block;
+  float: center;
 }
-#marvel_chapter {
-  max-height: 90vh;
-  min-height: 80vh;
-}
-
-#next-steps {
-  min-height: 20vh;
-  max-height: 25vh;
-}
-#soft_skills {
-  min-height: 400px;
-  max-height: 500px;
 }
 
-#find_me {
 
-  height: 80px;
+@media only screen and (max-width: 600px) {
+
+p {
+  font-size: 20px;
+  line-height: 35px;
 }
-    .dark_background {
-      background-color: #3A3B3F;
-      color: white;
-      box-sizing: border-box;
-      min-height: 200px;
-      max-height: 250px;
-      width: 95%;
-      margin: 2.5%, auto ;
-      padding: 10%;
-      display: inline-block;
-      float: center;
-    }
 
-    #soft_skills {
-      min-height: 300px;
-      max-height: 400px;
-    }
+h1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 40px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+#title_div {
+  height: 200px;
+}
+
+
+.dark_background {
+  box-sizing: border-box;
+  min-height: 200px;
+  max-height: 250px;
+  width: 95%;
+  margin: 2.5%, auto ;
+  padding: 10%;
+  display: inline-block;
+  float: center;
+  }
 }
