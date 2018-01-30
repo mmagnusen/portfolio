@@ -1,0 +1,703 @@
+/***************************************
+                ALL MIXINS
+****************************************/
+/***************************************
+    STYLES FOR FONTS
+****************************************/
+/* line 4, ../sass/partials/_fonts.scss */
+h1 {
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+  /* line 4, ../sass/partials/_fonts.scss */
+  h1 {
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /* line 4, ../sass/partials/_fonts.scss */
+  h1 {
+    font-size: 100px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  /* line 4, ../sass/partials/_fonts.scss */
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 4, ../sass/partials/_fonts.scss */
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+/* line 32, ../sass/partials/_fonts.scss */
+h2 {
+  font-size: 50px;
+  padding: 0px;
+}
+@media only screen and (min-width: 1601px) and (max-width: 2560px) {
+  /* line 32, ../sass/partials/_fonts.scss */
+  h2 {
+    font-size: 70px;
+  }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+  /* line 32, ../sass/partials/_fonts.scss */
+  h2 {
+    font-size: 40px;
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /* line 32, ../sass/partials/_fonts.scss */
+  h2 {
+    font-size: 40px;
+    line-height: 70px;
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  /* line 32, ../sass/partials/_fonts.scss */
+  h2 {
+    font-size: 35px;
+    line-height: 45px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 32, ../sass/partials/_fonts.scss */
+  h2 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+/* line 61, ../sass/partials/_fonts.scss */
+h3 {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+  /* line 61, ../sass/partials/_fonts.scss */
+  h3 {
+    margin: 10px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  /* line 61, ../sass/partials/_fonts.scss */
+  h3 {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 61, ../sass/partials/_fonts.scss */
+  h3 {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+/* line 89, ../sass/partials/_fonts.scss */
+h4 {
+  font-size: 20px;
+}
+@media only screen and (min-width: 1601px) and (max-width: 2560px) {
+  /* line 89, ../sass/partials/_fonts.scss */
+  h4 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /* line 89, ../sass/partials/_fonts.scss */
+  h4 {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  /* line 89, ../sass/partials/_fonts.scss */
+  h4 {
+    font-size: 22px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 89, ../sass/partials/_fonts.scss */
+  h4 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+
+/* line 116, ../sass/partials/_fonts.scss */
+h5 {
+  font-size: 15px;
+}
+@media only screen and (min-width: 1601px) and (max-width: 2560px) {
+  /* line 116, ../sass/partials/_fonts.scss */
+  h5 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+  /* line 116, ../sass/partials/_fonts.scss */
+  h5 {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /* line 116, ../sass/partials/_fonts.scss */
+  h5 {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  /* line 116, ../sass/partials/_fonts.scss */
+  h5 {
+    font-size: 16px;
+    line-height: 50px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 116, ../sass/partials/_fonts.scss */
+  h5 {
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+
+/* line 142, ../sass/partials/_fonts.scss */
+p {
+  font-size: 20px;
+  line-height: 60px;
+  font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (min-width: 1601px) and (max-width: 2560px) {
+  /* line 142, ../sass/partials/_fonts.scss */
+  p {
+    font-size: 25px;
+  }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+  /* line 142, ../sass/partials/_fonts.scss */
+  p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  /* line 142, ../sass/partials/_fonts.scss */
+  p {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 142, ../sass/partials/_fonts.scss */
+  p {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+
+/* line 170, ../sass/partials/_fonts.scss */
+a {
+  color: #ba0044;
+  text-decoration: none;
+}
+
+/* line 175, ../sass/partials/_fonts.scss */
+a:visited {
+  color: #ba0044;
+}
+
+/* line 179, ../sass/partials/_fonts.scss */
+.font-colour {
+  color: #282C34;
+}
+
+/* line 183, ../sass/partials/_fonts.scss */
+.handwriting {
+  font-family: 'Pacifico', cursive;
+  color: #ba0044;
+}
+
+/* line 188, ../sass/partials/_fonts.scss */
+.skills {
+  font-family: 'Roboto Slab', serif;
+  font-size: 50px;
+  line-height: 80px;
+  text-align: center;
+}
+
+/*****************************************************************
+                STYLES FOR BODY AND WRAPPER, SETTING GRID LAYOUT
+******************************************************************/
+/* line 5, ../sass/partials/_wrapper.scss */
+body {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+/* line 12, ../sass/partials/_wrapper.scss */
+#wrapper {
+  width: 70%;
+  margin: 0 auto;
+  float: none;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: 40px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /* line 12, ../sass/partials/_wrapper.scss */
+  #wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 700px) {
+  /* line 12, ../sass/partials/_wrapper.scss */
+  #wrapper {
+    grid-template-rows: minmax(150px, 1fr);
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 12, ../sass/partials/_wrapper.scss */
+  #wrapper {
+    grid-template-rows: minmax(150px, 1fr);
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/***************************************************
+                STYLES FOR MAIN WEBSITE HEADER
+                MARILYN MAGNUSEN
+****************************************************/
+/* line 6, ../sass/partials/_title-div.scss */
+#title-div {
+  background-color: #282C34;
+  height: 300px;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+  /* line 6, ../sass/partials/_title-div.scss */
+  #title-div {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /* line 6, ../sass/partials/_title-div.scss */
+  #title-div {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  /* line 6, ../sass/partials/_title-div.scss */
+  #title-div {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 6, ../sass/partials/_title-div.scss */
+  #title-div {
+    height: 250px;
+  }
+}
+
+/***************************************
+              HARD SKILLS DIV
+****************************************/
+/* line 6, ../sass/partials/_hard-skills.scss */
+#hard-skills-title {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/partials/_hard-skills.scss */
+#hard-skills {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, minmax(250px, 1fr));
+  grid-row-gap: 60px;
+}
+
+/* line 23, ../sass/partials/_hard-skills.scss */
+#javascript {
+  background-color: #40b69c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  /* line 23, ../sass/partials/_hard-skills.scss */
+  #javascript {
+    flex-direction: column;
+  }
+}
+
+/* line 36, ../sass/partials/_hard-skills.scss */
+#python {
+  background-color: #fa5758;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  /* line 36, ../sass/partials/_hard-skills.scss */
+  #python {
+    flex-direction: column;
+  }
+}
+
+/* line 49, ../sass/partials/_hard-skills.scss */
+#testing {
+  background-color: #2a495d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  /* line 49, ../sass/partials/_hard-skills.scss */
+  #testing {
+    flex-direction: column;
+  }
+}
+
+/* line 61, ../sass/partials/_hard-skills.scss */
+#django {
+  background-color: #ed8b36;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  /* line 61, ../sass/partials/_hard-skills.scss */
+  #django {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* line 77, ../sass/partials/_hard-skills.scss */
+.a {
+  width: 40%;
+}
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  /* line 77, ../sass/partials/_hard-skills.scss */
+  .a {
+    width: 100%;
+    min-height: 100px;
+  }
+}
+
+/* line 85, ../sass/partials/_hard-skills.scss */
+.b {
+  width: 60%;
+}
+@media only screen and (min-width: 300px) and (max-width: 700px) {
+  /* line 85, ../sass/partials/_hard-skills.scss */
+  .b {
+    width: 100%;
+  }
+}
+
+/*******************************************************
+                STYLES FOR EXTERNAL LINKS DIV
+********************************************************/
+/* line 4, ../sass/partials/_external-links.scss */
+#find-me {
+  text-align: center;
+  width: 100%;
+  display: block;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+  align-content: center;
+}
+
+@media only screen and (min-width: 1601px) and (max-width: 2560px) {
+  /* line 14, ../sass/partials/_external-links.scss */
+  #external-links {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-gap: 40px;
+    grid-auto-rows: minmax(300px, 1fr);
+  }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+  /* line 14, ../sass/partials/_external-links.scss */
+  #external-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 40px;
+    grid-auto-rows: minmax(200px, 1fr);
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /* line 14, ../sass/partials/_external-links.scss */
+  #external-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    grid-auto-rows: minmax(200px, 1fr);
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  /* line 14, ../sass/partials/_external-links.scss */
+  #external-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    grid-auto-rows: minmax(150px, 1fr);
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 14, ../sass/partials/_external-links.scss */
+  #external-links {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, 1fr);
+  }
+}
+
+/* line 52, ../sass/partials/_external-links.scss */
+.dark-background:hover {
+  color: #282C34;
+  background-color: #C8E7EB;
+}
+@media only screen and (min-width: 1601px) and (max-width: 2560px) {
+  /* line 51, ../sass/partials/_external-links.scss */
+  .dark-background {
+    background-color: #3A3B3F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1600px) {
+  /* line 51, ../sass/partials/_external-links.scss */
+  .dark-background {
+    background-color: #3A3B3F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /* line 51, ../sass/partials/_external-links.scss */
+  .dark-background {
+    background-color: #3A3B3F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  /* line 51, ../sass/partials/_external-links.scss */
+  .dark-background {
+    background-color: #3A3B3F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 51, ../sass/partials/_external-links.scss */
+  .dark-background {
+    background-color: #3A3B3F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    width: 100%;
+  }
+}
+
+/***************************************
+          ALL CSS FOR THE FOOTER
+****************************************/
+/* line 6, ../sass/partials/_footer.scss */
+#footer {
+  width: 100%;
+  margin: 0 auto;
+  min-height: 150px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5%;
+  background-color: #F6F6F6;
+  box-sizing: border-box;
+}
+@media only screen and (min-width: 701px) and (max-width: 1000px) {
+  /* line 6, ../sass/partials/_footer.scss */
+  #footer {
+    height: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: #F6F6F6;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 700px) {
+  /* line 6, ../sass/partials/_footer.scss */
+  #footer {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 150px;
+    display: flex;
+    box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #F6F6F6;
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  /* line 6, ../sass/partials/_footer.scss */
+  #footer {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-height: 150px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #F6F6F6;
+    padding: 0 40px;
+  }
+}
+
+/*
+    LARGEST SCREEN SIZE
+*/
+/* line 13, ../sass/style.scss */
+#first-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+
+/* line 21, ../sass/style.scss */
+#image-div {
+  margin-bottom: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+}
+
+/* line 30, ../sass/style.scss */
+#profile-image {
+  max-width: 100%;
+}
+
+/* line 34, ../sass/style.scss */
+#about-me {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* line 43, ../sass/style.scss */
+#background {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* line 53, ../sass/style.scss */
+#projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* line 63, ../sass/style.scss */
+#soft-skills {
+  float: left;
+  display: block;
+  text-align: center;
+}

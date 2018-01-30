@@ -1,0 +1,67 @@
+@import 'partials/mixins',
+        'partials/fonts',
+        'partials/wrapper',
+        'partials/title-div',
+        'partials/hard-skills',
+        'partials/external-links',
+        'partials/footer';
+
+/*
+    LARGEST SCREEN SIZE
+*/
+
+#first-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  }
+
+#image-div {
+  margin-bottom: 100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  }
+
+#profile-image {
+  max-width: 100%;
+  }
+
+#about-me {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  }
+
+#background {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  }
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  }
+
+#soft-skills {
+  float: left;
+  display: block;
+  text-align: center;
+  }

@@ -1,0 +1,90 @@
+/***************************************
+              HARD SKILLS DIV
+****************************************/
+
+
+#hard-skills-title {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  }
+
+#hard-skills {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(4, minmax(250px, 1fr));
+  grid-row-gap: 60px;
+}
+
+#javascript {
+  background-color: #40b69c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+
+  @media only screen and (min-width: 300px) and (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+
+#python {
+  background-color: #fa5758;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  @media only screen and (min-width: 300px) and (max-width: 700px) {
+  flex-direction: column;
+  }
+}
+
+#testing {
+  background-color: #2a495d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  @media only screen and (min-width: 300px) and (max-width: 700px) {
+  flex-direction: column;
+  }
+}
+
+#django {
+  background-color: #ed8b36;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  @media only screen and (min-width: 300px) and (max-width: 700px) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+}
+
+.a {
+  width: 40%;
+  @media only screen and (min-width: 300px) and (max-width: 700px) {
+  width: 100%;
+  min-height: 100px;
+  }
+}
+
+.b {
+  width: 60%;
+  @media only screen and (min-width: 300px) and (max-width: 700px) {
+  width: 100%;
+  }
+}
