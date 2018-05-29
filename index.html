@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-GB">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,33 +15,33 @@
         <h1> Marilyn Magnusen</h1>
       </div>
 
-      <div id="wrapper">
-          <div id="first-block" class="font-colour">
+      <main>
+          <section id="first-block" class="font-colour">
               <h2 class="handwriting">Front-end Developer</h2>
-          </div>
+          </section>
 
-          <div id="image-div">
+          <section id="image-div">
               <img src="profile.jpg" alt="picture" id="profile-image">
-          </div>
+          </section>
 
-          <div id ="about-me" class="font-colour">
+          <section id ="about-me" class="font-colour">
             <h2 class="handwriting">About Me</h2>
             <p>
-              I'm a junior front-end developer. I enjoy working on interesting
+              I'm a Front-end Developer who enjoys working on interesting
                 projects, of real value to the end-user. I work mostly with vanilla
-                JavaScript and am also comfortable with Python and the Django framework.
+                JavaScript, React.js and Wordpress.
             </p>
             <p>
 
             </p>
-          </div>
+          </section>
 
-          <div id="background" class="font-colour">
+          <section id="background" class="font-colour">
             <h2 class="handwriting">Background</h2>
             <p>After a few stints working for different startups (Streetcar, which
               was aqcuired by Zipcar, RateSetter - one of the largest peer-to-peer
               lenders in the UK), and running my own business, I started working at
-              Marvel. I spent nearly two years doing everything from testing, bug
+              <a href="https://marvelapp.com/">Marvel</a>. I spent nearly two years doing everything from testing, bug
               reports, data analysis and data visualisation. The great thing about
               working in a startup is that everything is new and unchartered, meaning
               you have the opportunity to dip your hand in everything.
@@ -54,44 +55,65 @@
             <p>
               I started off with Code Academy, learning the basics of HTML and CSS,
               moving onto Treehouse and using Youtube, Stack, Medium and anything
-              else I could get my hands on. I found Codebar and still religiously attend.
+              else I could get my hands on. I found <a href="https://codebar.io/">Codebar</a> and still religiously attend.
             </p>
-          </div>
+          </section>
 
-          <div id="projects" class="font-colour">
+          <section id="projects" class="font-colour">
             <h2 class="handwriting">Projects</h2>
             <p>
-              I'm currently enjoying getting stuck into my own personal projects,
-              focussing on expanding my knowledge and and skill set.
+              I'm currently working on a variety of personal and freelance projects,
+              focussing on expanding my knowledge and skill-set.
             </p>
+
+            <div id="sworkit-blog">
+              <div class="project-text">
+                <h3>Sworkit Blog</h3>
+                <p>Built with the Wordpress CMS, creating a custom theme from scratch. Current on-going project.</p>
+                <p>View site <a href="https://blog.sworkit.com/">here</a></p>
+              </div>
+              <div class="project-image">
+                <a href="https://blog.sworkit.com/"><img src="sworkit-blog.png"/></a>
+              </div>
+            </div>
+
+            <div id="sworkit-shopify">
+              <div class="project-text">
+                  <h3>Sworkit Shopify Store</h3>
+                  <p>Fully functional ecommerce site for high-growth fitness app.</p>
+                  <p>View site <a href="https://store.sworkit.com/">here</a></p>
+              </div>
+              <div class="project-image">
+                <a href="https://store.sworkit.com/"><img src="sworkit-shopify.png"/></a>
+              </div>
+            </div>
+
+            <div id="sworkit-help">
+              <div class="project-text">
+                  <h3>Sworkit Help Center</h3>
+                  <p>Created with Zendesk, inline with existing brand.</p>
+                  <p>View site <a href="https://help.sworkit.com/hc/en-us">here</a></p>
+                </div>
+                <div class="project-image">
+                  <a href="https://help.sworkit.com/hc/en-us"><img src="sworkit-help.png"/></a>
+                </div>
+            </div>
+            
+
             <h3>The Next Step</h3>
 
-            <p>The Next Step is a tool for creating a more personable, modern CV. The idea
-              is that instead of creating static resumes using outdated text editors,
-              users can create resumes which show the best of their skills and experience.
-              </p>
-            <p>I got the idea for The Next Step when transitioning between careers
-              and building this site. I had great fun creating something unique to
-              represent me but it struck how difficult it would be for people from
-              a non-technical background to showcase their own work in the same way.</p>
-            <p>It navigates away from conventional editors such as Microsoft Word
-              and Google Docs, created in an era where documents were created to
-              be printed. The traditional editor bar is replaced with a light-weight
-              tooltop menu, drawing inspiration from modern editors such as Dropbox Paper,
-              Quip and Medium.</p>
-              <p>The stack: the backend is built in Python, using the Django framework.
-                The front-end is HTML, CSS and plain JavaScript. AJAX is used to
-                send the user's resume content to the database, and again to populate
-                the resume each time the page is loaded. </p>
-            <p>You can view the repo for it <a href="https://github.com/mmagnusen/nextstep" target="blank">here</a>
+            <p>The Next Step is a jobs listing site for Developers.</p>
+              <p>The stack: the backend is built in Python, using the Django framework to create an API.
+                The front-end is built in React, consuming the Django API to manage authentication and data. </p>
+            <p>You can view the repo for it <a href="https://github.com/mmagnusen/nextstep-react" target="blank">here</a>
               or view the prototype <a href="http://www.thenextstep.io/" target="blank">here.</a></p>
-          </div>
+          </section>
 
           <div id="hard-skills-title">
               <h2 class="handwriting">Hard Skills</h2>
           </div>
 
-          <div id="hard-skills">
+          <section id="hard-skills">
 
             <div id="javascript" class="font-colour">
                 <div class="a">
@@ -106,14 +128,14 @@
 
             <div id="python" class="font-colour">
                 <div class="a">
-                    <h3 class="skills">Python</h3>
+                    <h3 class="skills">React.js</h3>
                 </div>
                 <div class="b">
-                    <p>Core Python</p>
-                    <p>Reading and writing to files</p>
-                    <p>Doctests and unit tests</p>
+                    <p>React Router</p>
+                    <p>Consuming APIs</p>
+                    <p>External Libraries</p>
                 </div>
-          </div>
+            </div>
 
             <div id="testing" class="font-colour">
                 <div class="a">
@@ -131,26 +153,26 @@
                   <h3 class="skills">Django</h3>
               </div>
               <div class="b">
-                <p>User registration and authentication</p>
+                <p>Creating APIs with serializers</p>
                 <p>Templates, views & url patterns</p>
                 <p>Custom models</p>
               </div>
             </div>
-          </div>
+          </section>
 
-          <div id="soft-skills" class="font-colour">
+          <section id="soft-skills" class="font-colour">
             <h2 class="handwriting">Soft Skills</h2>
-            <p>Git version control - you can find a link to my Github profile below</p>
+            <p>Git version control - you can find a link to my <a href="https://github.com/mmagnusen">Github</a> profile</p>
             <p>Experience working with agile teams in sprints</p>
             <p>Comfortable with terminal and command line</p>
             <p>Atlassian - Jira issue tracking </p>
-          </div>
+          </section>
 
-          <div id="find-me" class="font-colour">
+          <section id="find-me" class="font-colour">
             <h2 class="handwriting">Find me on the web</h2>
-          </div>
+          </section>
 
-          <div id="external-links" class="font-colour">
+          <section id="external-links" class="font-colour">
               <a href="https://twitter.com/m_magnusen">
                 <div class="dark-background">
                 <h4>Twitter</h4>
@@ -182,16 +204,16 @@
                 </div>
               </a>
 
-              <a href="https://medium.com/@NextStepCoders">
+              <a href="https://medium.com/@m_magnusen">
                 <div class="dark-background">
                   <h4>Medium</h4>
                 </div>
               </a>
-          </div>
-      </div>
+          </section>
+      </main>
 
-      <div id="footer" class="font-colour">
+      <footer class="font-colour">
         <h5>This site was made by hand, using plain HTML and Sass CSS. <a href="https://github.com/mmagnusen/portfolio" target="blank">View on GitHub</a></h5>
-      </div>
+      </footer>
   </body>
 </html>

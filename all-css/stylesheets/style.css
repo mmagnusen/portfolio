@@ -111,6 +111,7 @@ h3 {
 /* line 89, ../sass/partials/_fonts.scss */
 h4 {
   font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 @media only screen and (min-width: 1601px) and (max-width: 2560px) {
   /* line 89, ../sass/partials/_fonts.scss */
@@ -140,100 +141,107 @@ h4 {
   }
 }
 
-/* line 116, ../sass/partials/_fonts.scss */
+/* line 117, ../sass/partials/_fonts.scss */
 h5 {
   font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
 }
 @media only screen and (min-width: 1601px) and (max-width: 2560px) {
-  /* line 116, ../sass/partials/_fonts.scss */
+  /* line 117, ../sass/partials/_fonts.scss */
   h5 {
     font-size: 30px;
   }
 }
 @media only screen and (min-width: 1001px) and (max-width: 1600px) {
-  /* line 116, ../sass/partials/_fonts.scss */
+  /* line 117, ../sass/partials/_fonts.scss */
   h5 {
     font-size: 25px;
   }
 }
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
-  /* line 116, ../sass/partials/_fonts.scss */
+  /* line 117, ../sass/partials/_fonts.scss */
   h5 {
     font-size: 20px;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 700px) {
-  /* line 116, ../sass/partials/_fonts.scss */
+  /* line 117, ../sass/partials/_fonts.scss */
   h5 {
     font-size: 16px;
     line-height: 50px;
   }
 }
 @media only screen and (max-width: 400px) {
-  /* line 116, ../sass/partials/_fonts.scss */
+  /* line 117, ../sass/partials/_fonts.scss */
   h5 {
     font-size: 16px;
     line-height: 40px;
   }
 }
 
-/* line 142, ../sass/partials/_fonts.scss */
+/* line 144, ../sass/partials/_fonts.scss */
 p {
   font-size: 20px;
   line-height: 60px;
   font-family: 'Open Sans', sans-serif;
 }
 @media only screen and (min-width: 1601px) and (max-width: 2560px) {
-  /* line 142, ../sass/partials/_fonts.scss */
+  /* line 144, ../sass/partials/_fonts.scss */
   p {
     font-size: 25px;
   }
 }
 @media only screen and (min-width: 1001px) and (max-width: 1600px) {
-  /* line 142, ../sass/partials/_fonts.scss */
+  /* line 144, ../sass/partials/_fonts.scss */
   p {
     font-size: 20px;
     line-height: 40px;
   }
 }
 @media only screen and (min-width: 401px) and (max-width: 700px) {
-  /* line 142, ../sass/partials/_fonts.scss */
+  /* line 144, ../sass/partials/_fonts.scss */
   p {
     font-size: 20px;
     line-height: 35px;
   }
 }
 @media only screen and (max-width: 400px) {
-  /* line 142, ../sass/partials/_fonts.scss */
+  /* line 144, ../sass/partials/_fonts.scss */
   p {
     font-size: 20px;
     line-height: 35px;
   }
 }
 
-/* line 170, ../sass/partials/_fonts.scss */
+/* line 172, ../sass/partials/_fonts.scss */
+li {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* line 177, ../sass/partials/_fonts.scss */
 a {
   color: #ba0044;
   text-decoration: none;
 }
 
-/* line 175, ../sass/partials/_fonts.scss */
+/* line 182, ../sass/partials/_fonts.scss */
 a:visited {
   color: #ba0044;
 }
 
-/* line 179, ../sass/partials/_fonts.scss */
+/* line 186, ../sass/partials/_fonts.scss */
 .font-colour {
   color: #282C34;
 }
 
-/* line 183, ../sass/partials/_fonts.scss */
+/* line 190, ../sass/partials/_fonts.scss */
 .handwriting {
   font-family: 'Pacifico', cursive;
   color: #ba0044;
 }
 
-/* line 188, ../sass/partials/_fonts.scss */
+/* line 195, ../sass/partials/_fonts.scss */
 .skills {
   font-family: 'Roboto Slab', serif;
   font-size: 50px;
@@ -253,7 +261,7 @@ body {
 }
 
 /* line 12, ../sass/partials/_wrapper.scss */
-#wrapper {
+main {
   width: 70%;
   margin: 0 auto;
   float: none;
@@ -266,21 +274,21 @@ body {
 }
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
   /* line 12, ../sass/partials/_wrapper.scss */
-  #wrapper {
+  main {
     width: 95%;
     margin: 0 auto;
   }
 }
 @media only screen and (min-width: 400px) and (max-width: 700px) {
   /* line 12, ../sass/partials/_wrapper.scss */
-  #wrapper {
+  main {
     grid-template-rows: minmax(150px, 1fr);
     width: 90%;
   }
 }
 @media only screen and (max-width: 400px) {
   /* line 12, ../sass/partials/_wrapper.scss */
-  #wrapper {
+  main {
     grid-template-rows: minmax(150px, 1fr);
     width: 90%;
     margin: 0 auto;
@@ -327,6 +335,100 @@ body {
   /* line 6, ../sass/partials/_title-div.scss */
   #title-div {
     height: 250px;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  /* line 1, ../sass/partials/_projects.scss */
+  #sworkit-blog {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+  }
+}
+@media only screen and (min-width: 850px) {
+  /* line 1, ../sass/partials/_projects.scss */
+  #sworkit-blog {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  /* line 16, ../sass/partials/_projects.scss */
+  #sworkit-shopify {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+  }
+}
+@media only screen and (min-width: 850px) {
+  /* line 16, ../sass/partials/_projects.scss */
+  #sworkit-shopify {
+    flex-direction: row-reverse;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  /* line 29, ../sass/partials/_projects.scss */
+  #sworkit-help {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+  }
+}
+@media only screen and (min-width: 850px) {
+  /* line 29, ../sass/partials/_projects.scss */
+  #sworkit-help {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  /* line 43, ../sass/partials/_projects.scss */
+  .project-text h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (min-width: 300px) {
+  /* line 41, ../sass/partials/_projects.scss */
+  .project-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 850px) {
+  /* line 41, ../sass/partials/_projects.scss */
+  .project-text {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  /* line 66, ../sass/partials/_projects.scss */
+  .project-image img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 300px) {
+  /* line 64, ../sass/partials/_projects.scss */
+  .project-image {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 850px) {
+  /* line 64, ../sass/partials/_projects.scss */
+  .project-image {
+    width: 50%;
   }
 }
 
@@ -579,7 +681,7 @@ body {
           ALL CSS FOR THE FOOTER
 ****************************************/
 /* line 6, ../sass/partials/_footer.scss */
-#footer {
+footer {
   width: 100%;
   margin: 0 auto;
   min-height: 150px;
@@ -594,7 +696,7 @@ body {
 }
 @media only screen and (min-width: 701px) and (max-width: 1000px) {
   /* line 6, ../sass/partials/_footer.scss */
-  #footer {
+  footer {
     height: 200px;
     display: flex;
     align-content: center;
@@ -605,7 +707,7 @@ body {
 }
 @media only screen and (min-width: 401px) and (max-width: 700px) {
   /* line 6, ../sass/partials/_footer.scss */
-  #footer {
+  footer {
     width: 100%;
     margin: 0 auto;
     min-height: 150px;
@@ -621,7 +723,7 @@ body {
 }
 @media only screen and (max-width: 400px) {
   /* line 6, ../sass/partials/_footer.scss */
-  #footer {
+  footer {
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
@@ -639,7 +741,7 @@ body {
 /*
     LARGEST SCREEN SIZE
 */
-/* line 13, ../sass/style.scss */
+/* line 15, ../sass/style.scss */
 #first-block {
   display: flex;
   align-items: center;
@@ -648,7 +750,7 @@ body {
   height: 200px;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 23, ../sass/style.scss */
 #image-div {
   margin-bottom: 100px;
   margin: 0 auto;
@@ -658,12 +760,12 @@ body {
   background-color: pink;
 }
 
-/* line 30, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 #profile-image {
   max-width: 100%;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 #about-me {
   display: flex;
   flex-direction: column;
@@ -673,25 +775,23 @@ body {
   box-sizing: border-box;
 }
 
-/* line 43, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 #background {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
-  text-align: center;
   box-sizing: border-box;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 #projects {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
-  text-align: center;
   box-sizing: border-box;
 }
 
