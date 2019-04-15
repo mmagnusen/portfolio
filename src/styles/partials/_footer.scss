@@ -1,0 +1,55 @@
+/***************************************
+          ALL CSS FOR THE FOOTER
+****************************************/
+
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 150px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #F6F6F6;
+    box-sizing: border-box;
+  
+    @media only screen and (min-width: 701px) and (max-width: 1000px) {
+    height: 200px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: #F6F6F6;
+    }
+  
+    @media only screen and (min-width: 401px) and (max-width: 700px) {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 150px;
+    display: flex;
+    box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #F6F6F6;
+    padding: 0 30px;
+    }
+  
+    @media only screen and (max-width: 400px)  {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-height: 150px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    background-color: #F6F6F6;
+    padding: 0 40px;
+    }
+  }
