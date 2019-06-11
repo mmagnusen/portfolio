@@ -98,13 +98,12 @@ class App extends Component {
           </div>
           
 
-          <h3>The Next Step</h3>
+          <h3>Platfore</h3>
 
-          <p>The Next Step is a jobs listing site for Developers.</p>
-            <p>The stack: the backend is built in Python, using the Django framework to create an API.
+          <p>Platfore is a community for podcast creators.</p>
+            <p>The stack: the back-end is built in Python, using the Django framework to create an API.
               The front-end is built in React, consuming the Django API to manage authentication and data. </p>
-          <p>You can view the repo for it <a href="https://github.com/mmagnusen/nextstep-react" target="blank">here</a>
-            or view the prototype <a href="http://www.thenextstep.io/" target="blank">here.</a></p>
+          <p>You can view the site <a href="https://www.platfore.com/" target="blank">here.</a></p>
         </section>
 
         <div id="hard-skills-title">
@@ -190,9 +189,9 @@ class App extends Component {
             </a>
 
 
-            <a href="https://www.thenextstep.io">
+            <a href="https://www.platfore.com/">
               <div class="dark-background">
-                <h4> The Next Step</h4>
+                <h4> Platfore</h4>
               </div>
             </a>
 
@@ -211,7 +210,7 @@ class App extends Component {
     </main>
 
     <footer class="font-colour">
-      <h5>This site was made by hand, using plain HTML and Sass CSS. <a href="https://github.com/mmagnusen/portfolio" target="blank">View on GitHub</a></h5>
+      <h5>This site was made by hand using React and deployed on Netlify. <a href="https://github.com/mmagnusen/portfolio" target="blank">View on GitHub</a></h5>
     </footer>
       </div>
     );
