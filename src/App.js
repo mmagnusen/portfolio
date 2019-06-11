@@ -101,7 +101,7 @@ class App extends Component {
           <h3>Platfore</h3>
 
           <p>Platfore is a community for podcast creators.</p>
-            <p>The stack: the backe-nd is built in Python, using the Django framework to create an API.
+            <p>The stack: the back-end is built in Python, using the Django framework to create an API.
               The front-end is built in React, consuming the Django API to manage authentication and data. </p>
           <p>You can view the site <a href="https://www.platfore.com/" target="blank">here.</a></p>
         </section>
