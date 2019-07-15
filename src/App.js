@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
-import profile from './assets/profile.jpg'
-import sworkitBlog from './assets/sworkit-blog.png'
-import sworkitShopify from './assets/sworkit-shopify.png'
-import sworkitHelp from './assets/sworkit-help.png'
+import { profile, SworkitBlog, SworkitShopify, SworkitHelp } from './assets';
+import { Navigation } from './components'
 import './styles/App.scss';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div id="title-div">
-          <h1> Marilyn Magnusen</h1>
-        </div>
+        <Navigation />
 
         <main>
           <section id="first-block" class="font-colour">
@@ -68,7 +64,7 @@ class App extends Component {
                   <p>View site <a href="https://blog.sworkit.com/" target="blank">here</a></p>
                 </div>
                 <div class="project-image">
-                  <a href="https://blog.sworkit.com/" target="blank"><img src={sworkitBlog} alt="Sworkit Blog Site"/></a>
+                  <a href="https://blog.sworkit.com/" target="blank"><img src={SworkitBlog} alt="Sworkit Blog Site"/></a>
                 </div>
               </div>
 
@@ -79,7 +75,7 @@ class App extends Component {
                     <p>View site <a href="https://store.sworkit.com/" target="blank">here</a></p>
                 </div>
                 <div class="project-image">
-                  <a href="https://store.sworkit.com/" target="blank"><img src={sworkitShopify} alt="Sworkit Shopify Site"/></a>
+                  <a href="https://store.sworkit.com/" target="blank"><img src={SworkitShopify} alt="Sworkit Shopify Site"/></a>
                 </div>
               </div>
 
@@ -90,7 +86,7 @@ class App extends Component {
                     <p>View site <a href="https://help.sworkit.com/hc/en-us" target="blank">here</a></p>
                   </div>
                   <div class="project-image">
-                    <a href="https://help.sworkit.com/hc/en-us" target="blank"><img src={sworkitHelp} alt="Sworkit Help Center"/></a>
+                    <a href="https://help.sworkit.com/hc/en-us" target="blank"><img src={SworkitHelp} alt="Sworkit Help Center"/></a>
                   </div>
               </div>
               

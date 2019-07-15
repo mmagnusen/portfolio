@@ -2,11 +2,11 @@
 @import 'partials/mixins',
 'partials/fonts',
 'partials/wrapper',
-'partials/title-div',
 'partials/projects',
 'partials/hard-skills',
 'partials/external-links',
 'partials/footer';
+@import '../constants/breakpoints';
 
 #first-block {
     display: flex;
@@ -60,4 +60,12 @@
     float: left;
     display: block;
     text-align: center;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      @media (min-width: $mobileLargeBreakpoint ) {
+        width: 90%;
+      }
     }
