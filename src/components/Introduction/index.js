@@ -1,19 +1,16 @@
 import React from 'react';
+import ScrollableAnchor from 'react-scrollable-anchor';
+import { profile } from '../../assets';
 import './Introduction.scss';
 
 const Introduction = () => (
     <div className='Introduction'>
-        <div className='container'>
-            <h1>Marilyn Magnusen</h1>
-            <ul>
-                <li>About Me</li>
-                <li>Background</li>
-                <li>Projects</li>
-                <li>Hard Skills</li>
-                <li>Soft Skills</li>
-                <li>Find Me</li>
-            </ul>
-        </div>
+        <section className="Introduction-title">
+            <h2 className="handwriting">Front-end Developer</h2>
+        </section>
+        <section id="Introduction-profile">
+            <img src={profile} alt="profile" className="Introduction-profileImage" />
+        </section>
     </div>
 )
 

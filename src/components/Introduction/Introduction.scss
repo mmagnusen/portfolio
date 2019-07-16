@@ -3,5 +3,23 @@
 $module: 'Introduction';
 
 .#{$module} { 
+    &-profileImage {
+        max-width: 100%;
+    }
 
+    &-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+    }
+
+    &-profile {
+        margin-bottom: 100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

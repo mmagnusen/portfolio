@@ -1,19 +1,19 @@
 import React, { Component } from 'react';
 import { Responsive} from 'semantic-ui-react';
 import ClassNames from 'classnames';
-import ScrollableAnchor from 'react-scrollable-anchor'
+import { Link } from '../';
 import './Navigation.scss';
 
 class Navigation extends Component {
     state = {
         dropdownOpen: false,
         menuItems: [
-            { title: 'About Me' }, 
-            { title: 'Background' }, 
-            { title: 'Projects' }, 
-            { title: 'Hard Skills' }, 
-            { title: 'Soft Skills' }, 
-            { title: 'Find Me' },
+            { title: 'About Me', link: 'AboutMe' }, 
+            { title: 'Background', link: 'Background' }, 
+            { title: 'Projects', link: 'Projects' }, 
+            { title: 'Hard Skills', link: 'HardSkills' }, 
+            { title: 'Soft Skills', link: 'SoftSkills' }, 
+            { title: 'Find Me', link: 'FindMe' },
         ],
     }
 
@@ -30,7 +30,7 @@ class Navigation extends Component {
             {this.renderHamburger()}
             <h1>Marilyn Magnusen</h1>
                 <ul>
-                    { menuItems.map((menuItem) => (<li onClick={() => this.setState({dropdownOpen: false})}>{menuItem.title}</li>))}
+                    { menuItems.map((menuItem) => (<li onClick={() => this.setState({dropdownOpen: false})}>{menuItem.title}}</li>))}
                 </ul>
             </div>)
     }
@@ -42,7 +42,7 @@ class Navigation extends Component {
             <div className='Navigation-main container'>
                 <h1>Marilyn Magnusen</h1>
                 <ul>
-                    { menuItems.map((menuItem) => (<li>{menuItem.title}</li>))}
+                    { menuItems.map((menuItem) => (<li><Link to={menuItem.link}>{menuItem.title}</Link></li>))}
                 </ul>
                 {this.renderHamburger()}
             </div>

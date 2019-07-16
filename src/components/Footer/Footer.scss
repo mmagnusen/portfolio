@@ -1,9 +1,8 @@
-/***************************************
-          ALL CSS FOR THE FOOTER
-****************************************/
+@import '../../constants/breakpoints';
 
+$module: 'Footer';
 
-footer {
+.#{$module} { 
     width: 100%;
     margin: 0 auto;
     min-height: 150px;
@@ -52,4 +51,4 @@ footer {
     background-color: #F6F6F6;
     padding: 0 40px;
     }
-  }
+}

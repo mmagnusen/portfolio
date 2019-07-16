@@ -1,0 +1,12 @@
+@import '../../constants/breakpoints';
+
+$module: 'Background';
+
+.#{$module} {  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}

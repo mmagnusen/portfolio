@@ -45,9 +45,10 @@ $module: 'Navigation';
         .hamburgerContainer {
             > div {
                 display: flex;
-                @media (min-width: $computerBreakpoint ) {
-                    display: none;
-                }
+            }
+
+            @media (min-width: $computerBreakpoint ) {
+                display: none;
             }
         }
     }

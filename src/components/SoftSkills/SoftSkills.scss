@@ -1,0 +1,9 @@
+@import '../../constants/breakpoints';
+
+$module: 'SoftSkills';
+
+.#{$module} { 
+    float: left;
+    display: block;
+    text-align: center;
+}
