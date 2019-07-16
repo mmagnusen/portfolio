@@ -13,8 +13,6 @@ $module: 'Navigation';
     h1 {
         font-size: 1.2rem;
         line-height: 60px;
-        // display: flex;
-        // align-items: center;
     }
 
     ul {
@@ -93,6 +91,10 @@ $module: 'Navigation';
             @media (min-width: $tabletBreakpoint ) {
                 margin-bottom: 2rem;
             }
+        }
+
+        a, a:visited {
+            color: $white;
         }
 
         .hamburgerContainer {

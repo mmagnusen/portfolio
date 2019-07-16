@@ -15,7 +15,7 @@ body {
 }
 
 main {
-  width: 70%;
+  width: 90%;
   margin: 0 auto;
   float: none;
   display: grid;
@@ -24,21 +24,8 @@ main {
   align-content: center;
   align-items: center;
   justify-content: center;
-
-  @media only screen and (max-width: 400px) {
-    grid-template-rows: minmax(150px, 1fr);
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  @media only screen and (min-width: 400px) and (max-width: 700px) {
-    grid-template-rows: minmax(150px, 1fr);
-    width: 90%;
-  }
-
-  @media only screen and (min-width: 701px) and (max-width: 1000px) {
-    width: 95%;
-    margin: 0 auto;
+  @media (min-width: $mobileLargeBreakpoint ) {
+    width: 80%;
   }
 }
 

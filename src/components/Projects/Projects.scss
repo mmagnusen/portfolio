@@ -11,13 +11,11 @@ $module: 'Projects';
     box-sizing: border-box;
 
     #sworkit-blog {
-
         @media only screen and ( min-width: 300px ){
             width: 100%;
             display: flex;
             flex-direction: column;
             margin: 50px 0;
-    
         }
     
         @media only screen and ( min-width: 850px ){
@@ -51,13 +49,10 @@ $module: 'Projects';
         }
     }
     .project-text {
-    
         h3 {
-    
             @media only screen and ( min-width: 300px ){ 
                 font-size: 30px;
             }
-    
         }
     
         @media only screen and ( min-width: 300px ){
@@ -74,14 +69,12 @@ $module: 'Projects';
     }
     
     .project-image {
-    
         img {
             @media only screen and ( min-width: 300px ){
                 width: 100%;
             }
-    
-    
         }
+        
         @media only screen and ( min-width: 300px ){
             width: 100%;
             display: flex;

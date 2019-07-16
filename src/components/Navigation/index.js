@@ -30,7 +30,7 @@ class Navigation extends Component {
             {this.renderHamburger()}
             <h1>Marilyn Magnusen</h1>
                 <ul>
-                    { menuItems.map((menuItem) => (<li onClick={() => this.setState({dropdownOpen: false})}>{menuItem.title}}</li>))}
+                    { menuItems.map((menuItem) => (<li onClick={() => this.setState({dropdownOpen: false})}><Link to={menuItem.link}>{menuItem.title}</Link></li>))}
                 </ul>
             </div>)
     }
