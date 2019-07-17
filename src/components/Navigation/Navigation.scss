@@ -32,6 +32,11 @@ $module: 'Navigation';
 
     &-main {
         padding: 1rem 0;
+
+        a, a:visited {
+            color: $black;
+        }
+
         ul {
             display: none;
             @media (min-width: $computerBreakpoint ) {
