@@ -19,30 +19,29 @@ class Navigation extends Component {
 
     toggleDropdown = () => {
         const { dropdownOpen } = this.state;
-        this.setState({dropdownOpen: !dropdownOpen})
+        this.setState({dropdownOpen: !dropdownOpen})        
     }
 
     renderMobileDropdown = () => {
         const { menuItems } = this.state;
-
         return (
             <div className='Navigation-mobileDropdown'>
             {this.renderHamburger()}
             <h1>Marilyn Magnusen</h1>
                 <ul>
-                    { menuItems.map((menuItem) => (<li onClick={() => this.setState({dropdownOpen: false})}><Link to={menuItem.link}>{menuItem.title}</Link></li>))}
+                    { menuItems.map((menuItem) => (<li key={menuItem.link} onClick={() => this.setState({dropdownOpen: false})}><Link to={menuItem.link}>{menuItem.title}</Link></li>))}
                 </ul>
             </div>)
     }
 
     renderNavigation = () => {
         const { menuItems } = this.state;
-
+      
         return (
             <div className='Navigation-main container'>
                 <h1>Marilyn Magnusen</h1>
                 <ul>
-                    { menuItems.map((menuItem) => (<li><Link to={menuItem.link}>{menuItem.title}</Link></li>))}
+                    { menuItems.map((menuItem) => (<li><Link key={menuItem.link} to={menuItem.link}>{menuItem.title}</Link></li>))}
                 </ul>
                 {this.renderHamburger()}
             </div>
@@ -64,7 +63,6 @@ class Navigation extends Component {
     }
 
     render() {
-
         const { dropdownOpen } = this.state;
 
         return ( 
@@ -75,8 +73,6 @@ class Navigation extends Component {
                 </Responsive>
             }
                 {this.renderNavigation()}
-         
-       
             </nav>
         )
     }

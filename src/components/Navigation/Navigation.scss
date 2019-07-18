@@ -21,7 +21,6 @@ $module: 'Navigation';
         margin-block-start: none;
         margin-block-end: none;
     }
-
  
     li {
         cursor: pointer;
@@ -49,7 +48,6 @@ $module: 'Navigation';
             > div {
                 display: flex;
             }
-
             @media (min-width: $computerBreakpoint ) {
                 display: none;
             }
@@ -80,6 +78,7 @@ $module: 'Navigation';
         text-align: center;
         padding: 4rem 1rem 0 1rem;
         box-sizing: border-box;
+        position: fixed;
 
         h1 {
             font-size: 1.2rem;

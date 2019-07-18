@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { 
   Navigation, 
   Introduction, 
-  AboutMe, 
   Footer, 
   Background, 
   FindMe, 
@@ -20,8 +19,6 @@ class App extends Component {
 
         <main>
           <Introduction />
-
-          <AboutMe />
 
           <Background />
 

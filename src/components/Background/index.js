@@ -9,7 +9,7 @@ const Background = () => (
             <p>After a few stints working for different startups (Streetcar, which
             was aqcuired by Zipcar, RateSetter - one of the largest peer-to-peer
             lenders in the UK), and running my own business, I started working at
-            <a href="https://marvelapp.com/" target="blank">Marvel</a>. I spent nearly two years doing everything from testing, bug
+            <a href="https://marvelapp.com/" target="blank"> Marvel</a>. I spent nearly two years doing everything from testing, bug
             reports, data analysis and data visualisation. The great thing about
             working in a startup is that everything is new and unchartered, meaning
             you have the opportunity to dip your hand in everything.

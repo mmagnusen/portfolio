@@ -1,7 +1,6 @@
 export { default as Navigation } from './Navigation';
 export { default as Introduction } from './Introduction';
 export { default as Footer } from './Footer';
-export { default as AboutMe } from './AboutMe';
 export { default as Background} from './Background';
 export { default as FindMe} from './FindMe';
 export { default as SoftSkills } from './SoftSkills';

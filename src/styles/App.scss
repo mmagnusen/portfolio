@@ -67,8 +67,8 @@ h1 {
 }
 
 h2 {
-  font-size: 50px;
-  padding: 0px;
+    font-size: 50px;
+    padding: 0px;
   @media only screen and (min-width: 1601px) and (max-width: 2560px) {
     font-size: 70px;
   }
@@ -124,18 +124,18 @@ h4 {
   }
 
   @media only screen and (min-width: 701px) and (max-width: 1000px) {
-  font-size: 20px;
-  line-height: 40px;
+    font-size: 20px;
+    line-height: 40px;
   }
 
   @media only screen and (min-width: 401px) and (max-width: 700px) {
-  font-size: 22px;
-  line-height: 40px;
+    font-size: 22px;
+    line-height: 40px;
   }
 
   @media only screen and (max-width: 400px)  {
-  font-size: 25px;
-  line-height: 40px;
+    font-size: 25px;
+    line-height: 40px;
   }
 }
 
@@ -143,26 +143,25 @@ h5 {
   font-size: 15px;
   font-family: 'Open Sans', sans-serif;
   @media only screen and (min-width: 1601px) and (max-width: 2560px) {
-  font-size: 30px;;
-
+    font-size: 30px;;
   }
 
   @media only screen and (min-width: 1001px) and (max-width:1600px) {
-  font-size: 25px;
+    font-size: 25px;
   }
 
   @media only screen and (min-width: 701px) and (max-width: 1000px) {
-  font-size: 20px;
+    font-size: 20px;
   }
 
   @media only screen and (min-width: 401px) and (max-width: 700px) {
-  font-size: 16px;
-  line-height: 50px;
+    font-size: 16px;
+    line-height: 50px;
   }
 
   @media only screen and (max-width: 400px)  {
-  font-size: 16px;
-  line-height: 40px;
+    font-size: 16px;
+    line-height: 40px;
   }
 }
 
