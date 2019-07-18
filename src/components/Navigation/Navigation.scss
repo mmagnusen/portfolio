@@ -1,0 +1,138 @@
+@import '../../constants/breakpoints';
+@import '../../constants/colors';
+
+$module: 'Navigation';
+
+.#{$module} { 
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        line-height: 60px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        margin-block-start: none;
+        margin-block-end: none;
+    }
+ 
+    li {
+        cursor: pointer;
+        list-style: none;
+        font-size: 1.1rem;
+        margin-left: 1rem;
+    }
+
+    &-main {
+        padding: 1rem 0;
+
+        a, a:visited {
+            color: $black;
+        }
+
+        ul {
+            display: none;
+            @media (min-width: $computerBreakpoint ) {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+
+        .hamburgerContainer {
+            > div {
+                display: flex;
+            }
+            @media (min-width: $computerBreakpoint ) {
+                display: none;
+            }
+        }
+    }
+
+    .hamburgerContainer {
+        > div {
+            height: 25px;
+            width: 35px;
+            cursor: pointer;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+    }
+
+    .hamburgerLine {
+        background: black;
+        height: 2px;
+        width: 100%;
+        border-radius: 2px;
+    }
+
+    &-mobileDropdown {
+        background: $navy;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        padding: 4rem 1rem 0 1rem;
+        box-sizing: border-box;
+        position: fixed;
+
+        h1 {
+            font-size: 1.2rem;
+            margin: 0 0 0 0;
+            color: $white;
+            @media (min-width: $tabletBreakpoint ) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        li {
+            color: $white;
+            margin-bottom: 1.5rem;
+            @media (min-width: $tabletBreakpoint ) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        a, a:visited {
+            color: $white;
+        }
+
+        .hamburgerContainer {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+
+            > div {
+                position: relative;
+                display: flex;
+                height: 35px;
+                width: 35px;
+            }
+
+            .left {
+                transform: rotate(45deg);
+                right: calc(50% - 18px);
+                top: calc(50% - 2px);
+            }
+
+            .middle {
+                display: none;
+            }
+
+            .right {
+                transform: rotate(-45deg);
+                right: calc(50% - 18px);
+                top: calc(50% - 34px);
+            }
+        }
+
+        .hamburgerLine {
+            background: $white;
+            position: relative;
+        }
+    }
+}

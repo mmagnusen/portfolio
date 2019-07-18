@@ -1,0 +1,53 @@
+@import '../../constants/breakpoints';
+@import '../../constants/colors';
+
+$module: 'FindMe';
+
+.#{$module} { 
+    margin-bottom: 4rem;
+    &-onWeb {
+        text-align: center;
+        width: 100%;
+        display: block;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        align-content: center;  
+    }
+
+    &-externalLinks {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 20px;
+        grid-auto-rows: minmax(100px, 1fr);
+
+        @media only screen and (min-width: 401px)  {
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 40px;
+            grid-auto-rows: minmax(150px, 1fr);
+        }
+
+        @media only screen and (min-width: 1001px) {
+            grid-template-columns: repeat(3, 33%);
+        }
+    }
+
+    &-darkBackground {
+        background-color: #3A3B3F;
+        color: $white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        &:hover {
+        color: #282C34;
+        background-color: #C8E7EB;
+        }
+        height: 100px;
+    
+        @media only screen and (min-width: $mobileLargeBreakpoint) {
+            height: 150px;
+        }
+    }
+}   

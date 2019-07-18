@@ -1,63 +1,210 @@
+@import '../constants/breakpoints';
+@import '../constants/colors';
 
-@import 'partials/mixins',
-'partials/fonts',
-'partials/wrapper',
-'partials/title-div',
-'partials/projects',
-'partials/hard-skills',
-'partials/external-links',
-'partials/footer';
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $white;
+  height:100%;
+  width: 100%;
+}
 
-#first-block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 200px;
-    }
-  
-  #image-div {
-    margin-bottom: 100px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: pink;
-    }
-  
-  #profile-image {
-    max-width: 100%;
-    }
-  
-  #about-me {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    }
-  
-  #background {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    }
-  
-  #projects {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    }
-  
-  #soft-skills {
-    float: left;
-    display: block;
-    text-align: center;
-    }
+main {
+  width: 90%;
+  margin: 0 auto;
+  float: none;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-row-gap: 40px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  @media (min-width: $mobileLargeBreakpoint ) {
+    width: 80%;
+  }
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  @media (min-width: $mobileLargeBreakpoint ) {
+    width: 80%;
+  }
+}
+
+/***************************************
+    STYLES FOR FONTS
+****************************************/
+h1 {
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+
+  @media only screen and (min-width: 1001px) and (max-width:1600px) {
+    font-size: 100px;
+  }
+
+  @media only screen and (min-width: 701px) and (max-width: 1000px) {
+    font-size: 100px;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 700px) {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  @media only screen and (max-width: 400px)  {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+h2 {
+    font-size: 50px;
+    padding: 0px;
+  @media only screen and (min-width: 1601px) and (max-width: 2560px) {
+    font-size: 70px;
+  }
+
+  @media only screen and (min-width: 1001px) and (max-width:1600px) {
+    font-size: 40px;
+    margin: 10px;
+  }
+
+  @media only screen and (min-width: 701px) and (max-width: 1000px) {
+    font-size: 40px;
+    line-height: 70px;
+    margin: 10px;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 700px) {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  @media only screen and (max-width: 400px)  {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
+h3 {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  padding: 0px;
+
+  @media only screen and (min-width: 1001px) and (max-width:1600px) {
+    margin: 10px;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 700px) {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  @media only screen and (max-width: 400px)  {
+    font-size: 18px;
+    line-height: 40px;
+  }
+}
+
+h4 {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  @media only screen and (min-width: 1601px) and (max-width: 2560px) {
+    font-size: 30px;
+  }
+
+  @media only screen and (min-width: 701px) and (max-width: 1000px) {
+    font-size: 20px;
+    line-height: 40px;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 700px) {
+    font-size: 22px;
+    line-height: 40px;
+  }
+
+  @media only screen and (max-width: 400px)  {
+    font-size: 25px;
+    line-height: 40px;
+  }
+}
+
+h5 {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  @media only screen and (min-width: 1601px) and (max-width: 2560px) {
+    font-size: 30px;;
+  }
+
+  @media only screen and (min-width: 1001px) and (max-width:1600px) {
+    font-size: 25px;
+  }
+
+  @media only screen and (min-width: 701px) and (max-width: 1000px) {
+    font-size: 20px;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 700px) {
+    font-size: 16px;
+    line-height: 50px;
+  }
+
+  @media only screen and (max-width: 400px)  {
+    font-size: 16px;
+    line-height: 40px;
+  }
+}
+
+p {
+  font-size: 20px;
+  line-height: 60px;
+  font-family: 'Open Sans', sans-serif;
+
+  @media only screen and (min-width: 1601px) and (max-width: 2560px) {
+    font-size: 25px;
+  }
+
+  @media only screen and (min-width: 1001px) and (max-width:1600px) {
+    font-size: 20px;;
+    line-height: 40px;
+  }
+
+  @media only screen and (min-width: 401px) and (max-width: 700px) {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  @media only screen and (max-width: 400px)  {
+    font-size: 20px;
+    line-height: 35px;
+  }
+}
+
+li {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  color: $pink;
+  text-decoration: none;
+}
+
+a:visited {
+  color: $pink;
+}
+
+.handwriting {
+  font-family: 'Pacifico', cursive;
+  color: $pink;
+}

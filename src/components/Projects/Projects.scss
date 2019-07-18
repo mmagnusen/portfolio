@@ -1,0 +1,90 @@
+@import '../../constants/breakpoints';
+
+$module: 'Projects';
+
+.#{$module} {  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+
+    #sworkit-blog {
+        @media only screen and ( min-width: 300px ){
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 50px 0;
+        }
+    
+        @media only screen and ( min-width: 850px ){
+            flex-direction: row;
+        }
+    }
+    
+    #sworkit-shopify {
+        @media only screen and ( min-width: 300px ){
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 50px 0;
+        }
+    
+        @media only screen and ( min-width: 850px ){
+            flex-direction: row-reverse;
+        }
+    }
+    
+    #sworkit-help {
+        @media only screen and ( min-width: 300px ){
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            margin: 50px 0;
+        }
+    
+        @media only screen and ( min-width: 850px ){
+            flex-direction: row;
+        }
+    }
+    .project-text {
+        h3 {
+            @media only screen and ( min-width: 300px ){ 
+                font-size: 30px;
+            }
+        }
+    
+        @media only screen and ( min-width: 300px ){
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        @media only screen and ( min-width: 850px ){
+            width: 50%;
+        }
+    }
+    
+    .project-image {
+        img {
+            @media only screen and ( min-width: 300px ){
+                width: 100%;
+            }
+        }
+        
+        @media only screen and ( min-width: 300px ){
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        @media only screen and ( min-width: 850px ){
+            width: 50%;
+        }
+    }
+}

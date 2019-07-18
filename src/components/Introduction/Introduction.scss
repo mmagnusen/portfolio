@@ -1,0 +1,60 @@
+@import '../../constants/breakpoints';
+@import '../../constants/colors';
+
+$IntroductionContainer: 'IntroductionContainer';
+
+.#{$IntroductionContainer} {  
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (min-width: $computerBreakpoint)  {
+        display: grid;
+        grid-template-columns: minmax(430px, 1fr) 1fr;
+        grid-column-gap: 40px;
+        margin: 5rem 0 2rem 0;
+    }
+}
+
+$Introduction: 'Introduction';
+
+.#{$Introduction} { 
+    &-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 200px;
+        @media only screen and (min-width: $computerBreakpoint)  {
+            display: none;
+        }
+    }
+
+    &-profileImage {
+        max-width: 100%;
+    }
+
+    &-profile {
+        margin-bottom: 100px;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+$AboutMe: 'AboutMe';
+
+.#{$AboutMe} {  
+    color: $black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    @media only screen and (min-width: $computerBreakpoint)  {
+        text-align: left;
+        align-items: flex-start;
+    }
+}
