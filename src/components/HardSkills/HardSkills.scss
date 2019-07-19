@@ -1,6 +1,10 @@
+@import '../../constants/colors';
+
 $module: 'HardSkills';
 
 .#{$module} { 
+  color: $white;
+  margin-bottom: 3rem;
     &-title {
         text-align: center;
         align-items: center;
@@ -23,8 +27,6 @@ $module: 'HardSkills';
         align-items: center;
         justify-content: center;
         text-align: center;
-        color: white;
-      
         @media only screen and (min-width: 300px) and (max-width: 700px) {
           flex-direction: column;
         }
@@ -37,7 +39,6 @@ $module: 'HardSkills';
         align-items: center;
         justify-content: center;
         text-align: center;
-        color: white;
         @media only screen and (min-width: 300px) and (max-width: 700px) {
         flex-direction: column;
         }
@@ -49,7 +50,6 @@ $module: 'HardSkills';
         align-items: center;
         justify-content: center;
         text-align: center;
-        color: white;
         @media only screen and (min-width: 300px) and (max-width: 700px) {
         flex-direction: column;
         }
@@ -62,12 +62,10 @@ $module: 'HardSkills';
         align-items: center;
         justify-content: center;
         text-align: center;
-        color: white;
         @media only screen and (min-width: 300px) and (max-width: 700px) {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          text-align: center;
         }
       }
       

@@ -5,11 +5,12 @@ import './Projects.scss';
 
 const Projects = () => (
   <ScrollableAnchor id='Projects'>
-    <section className="Projects">
-        <h2 className="handwriting">Projects</h2>
+      <section className="Projects">
+      <div className='container'>
+        <h2 className="section-title">Projects</h2>
         <p>
-        I'm currently working on a variety of personal and freelance projects,
-        focussing on expanding my knowledge and skill-set.
+          I'm currently working on a variety of personal and freelance projects,
+          focussing on expanding my knowledge and skill-set.
         </p>
 
         <div id="sworkit-blog">
@@ -51,6 +52,7 @@ const Projects = () => (
           <p>The stack: the back-end is built in Python, using the Django framework to create an API.
             The front-end is built in React, consuming the Django API to manage authentication and data. </p>
         <p>You can view the site <a href="https://www.platfore.com/" target="blank">here.</a></p>
+      </div>
     </section>
   </ScrollableAnchor>
 );

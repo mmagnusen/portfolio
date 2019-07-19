@@ -4,26 +4,29 @@
 $IntroductionContainer: 'IntroductionContainer';
 
 .#{$IntroductionContainer} {  
-    display: flex;
-    flex-direction: column;
-
-    @media only screen and (min-width: $computerBreakpoint)  {
-        display: grid;
-        grid-template-columns: minmax(430px, 1fr) 1fr;
-        grid-column-gap: 40px;
-        margin: 5rem 0 2rem 0;
+    > div {
+        display: flex;
+        flex-direction: column;
+    
+        @media only screen and (min-width: $computerBreakpoint)  {
+            display: grid;
+            grid-template-columns: minmax(430px, 1fr) 1fr;
+            grid-column-gap: 40px;
+            margin: 5rem auto 2rem auto;
+        }
     }
 }
 
 $Introduction: 'Introduction';
 
 .#{$Introduction} { 
+    margin-bottom: 3rem;
     &-title {
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        height: 200px;
+        padding: 0 0.7rem 0 0.7rem;
         @media only screen and (min-width: $computerBreakpoint)  {
             display: none;
         }
@@ -53,6 +56,7 @@ $AboutMe: 'AboutMe';
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    margin-bottom: 3rem;
     @media only screen and (min-width: $computerBreakpoint)  {
         text-align: left;
         align-items: flex-start;
