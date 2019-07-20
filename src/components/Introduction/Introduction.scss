@@ -4,6 +4,8 @@
 $IntroductionContainer: 'IntroductionContainer';
 
 .#{$IntroductionContainer} {  
+    background: $backgroundGrey;
+    padding: 4rem 0 1rem 0;
     > div {
         display: flex;
         flex-direction: column;
@@ -12,7 +14,8 @@ $IntroductionContainer: 'IntroductionContainer';
             display: grid;
             grid-template-columns: minmax(430px, 1fr) 1fr;
             grid-column-gap: 40px;
-            margin: 5rem auto 2rem auto;
+            margin: 0 auto 2rem auto;
+            padding-top: 5rem;
         }
     }
 }
@@ -21,21 +24,6 @@ $Introduction: 'Introduction';
 
 .#{$Introduction} { 
     margin-bottom: 3rem;
-    &-title {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 0 0.7rem 0 0.7rem;
-        @media only screen and (min-width: $computerBreakpoint)  {
-            display: none;
-        }
-    }
-
-    &-profileImage {
-        max-width: 100%;
-    }
-
     &-profile {
         margin-bottom: 100px;
         height: 100%;
@@ -43,6 +31,12 @@ $Introduction: 'Introduction';
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    &-profileImage {
+        max-width: 200px;
+        @media only screen and (min-width: $mobileLargeBreakpoint)  {
+            max-width: 300px;
+        }
     }
 }
 

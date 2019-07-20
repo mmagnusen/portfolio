@@ -53,8 +53,11 @@ h4 {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 2rem;
+  @media (min-width: $mobileLargeBreakpoint ) {
+    font-size: 1.2rem;
+  }
 }
 
 li {
