@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Responsive} from 'semantic-ui-react';
 import ClassNames from 'classnames';
 import { Link } from '../';
+import { LINK_TYPE } from '../../constants/linkType';
 import './Navigation.scss';
 
 class Navigation extends Component {
@@ -29,7 +30,7 @@ class Navigation extends Component {
             {this.renderHamburger()}
             <h1>Marilyn Magnusen</h1>
                 <ul>
-                    { menuItems.map((menuItem) => (<li key={menuItem.link} onClick={() => this.setState({dropdownOpen: false})}><Link to={menuItem.link}>{menuItem.title}</Link></li>))}
+                    { menuItems.map((menuItem) => (<li key={menuItem.title} onClick={() => this.setState({dropdownOpen: false})}><Link to={menuItem.link} type={LINK_TYPE.ANCHOR}>{menuItem.title}</Link></li>))}
                 </ul>
             </div>)
     }
@@ -41,7 +42,7 @@ class Navigation extends Component {
             <div className='Navigation-main container'>
                 <h1>Marilyn Magnusen</h1>
                 <ul>
-                    { menuItems.map((menuItem) => (<li><Link key={menuItem.link} to={menuItem.link}>{menuItem.title}</Link></li>))}
+                    { menuItems.map((menuItem) => (<li key={menuItem.link}><Link to={menuItem.link} type={LINK_TYPE.ANCHOR}>{menuItem.title}</Link></li>))}
                 </ul>
                 {this.renderHamburger()}
             </div>

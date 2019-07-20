@@ -15,6 +15,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
         <Navigation />
 
           <Introduction />
@@ -30,6 +31,7 @@ class App extends Component {
           <FindMe />
 
         <Footer />
+        
       </div>
     );
   }

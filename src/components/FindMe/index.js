@@ -25,9 +25,9 @@ const FindMe = () => (
                         </div>
                     </Link>
 
-                    <Link to="https://www.codewars.com/users/marilynmags" type={LINK_TYPE.EXTERNAL}>
+                    <Link to="https://www.clearli.io/" type={LINK_TYPE.EXTERNAL}>
                         <div className="FindMe-darkBackground">
-                            <h4> Codewars</h4>
+                            <h4>Clearli</h4>
                         </div>
                     </Link>
 

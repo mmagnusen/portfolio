@@ -26,7 +26,7 @@ const Background = () => (
                 <p>
                 I started off with Code Academy, learning the basics of HTML and CSS,
                 moving on to Treehouse and using Youtube, Stack, Medium and anything
-                else I could get my hands on. I found <Link to="https://codebar.io/" type={LINK_TYPE.EXTERNAL}>Codebar</Link> and still religiously attend.
+                else I could get my hands on.
                 </p>
             </section>
         </section>

@@ -10,38 +10,36 @@ const HardSkills = () => (
                     <h2 className="section-title">Hard Skills</h2>
                 </div>
 
-                <section id="hard-skills">
-
+                <section className="HardSkills-skillsLists">
                     <div className="HardSkills-javascript" >
                         <div className="a">
-                            <h3 className="HardSkills-skills">Vanilla JavaScript</h3>
+                            <h3 className="HardSkills-skills">Styling with CSS</h3>
                         </div>
                         <div className="b">
-                            <p>Confident with ES6</p>
-                            <p>Writing tested, maintainable code</p>
-                            <p>Consuming APIs</p>
+                            <p>Sass</p>
+                            <p>Grid</p>
+                            <p>Flexbox</p>
                         </div>
                     </div>
 
                     <div className="HardSkills-python">
                         <div className="a">
-                            <h3 className="HardSkills-skills">React.js</h3>
+                            <h3 className="HardSkills-skills">JavaScript</h3>
                         </div>
                         <div className="b">
-                            <p>Next.js</p>
-                            <p>Gatsby.js</p>
+                            <p>React.js, Next.js and Gatsby.js</p>
+                            <p>Writing clear, maintainable code</p>
                             <p>Working with external libraries</p>
                         </div>
                     </div>
 
                     <div className="HardSkills-testing">
                         <div className="a">
-                            <h3 className="HardSkills-skills">Manual QA Testing</h3>
+                            <h3 className="HardSkills-skills">Testing</h3>
                         </div>
                         <div className="b">
-                            <p>Devising test plans for new product releases</p>
-                            <p>Comprehensive bug reports</p>
-                            <p>TestFlight for iOS </p>
+                            <p>Testing with Jest and Enzyme</p>
+                            <p>End-to-end testing with Ghost</p>
                         </div>
                     </div>
 
@@ -52,7 +50,7 @@ const HardSkills = () => (
                         <div className="b">
                             <p>Creating APIs with Dango Rest Framework</p>
                             <p>Implementing authentication systems</p>
-                            <p>Deploying</p>
+                            <p>Deploying backend applications</p>
                         </div>
                     </div>
                 </section>
