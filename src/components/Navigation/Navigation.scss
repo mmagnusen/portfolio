@@ -4,6 +4,7 @@
 $module: 'Navigation';
 
 .#{$module} { 
+    background: $backgroundGrey;
     .container {
         display: flex;
         justify-content: space-between;
@@ -11,8 +12,7 @@ $module: 'Navigation';
     }
 
     h1 {
-        font-size: 1.2rem;
-        line-height: 60px;
+        font-size: 1.5rem;
     }
 
     ul {
@@ -29,11 +29,31 @@ $module: 'Navigation';
         margin-left: 1rem;
     }
 
-    &-main {
+    &-main {   
         padding: 1rem 0;
+        @media (min-width: $tabletBreakpoint ) {
+            padding: 1.7rem 0;
+        }
 
         a, a:visited {
             color: $black;
+            padding-bottom: 0.5rem;
+        }
+
+        a {
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $pink;
+                transition: width .3s;
+                position: relative;
+                bottom: -8px;
+            }
+           &:hover::after {
+                width: 100%;
+            }
         }
 
         ul {
@@ -65,7 +85,7 @@ $module: 'Navigation';
     }
 
     .hamburgerLine {
-        background: black;
+        background: #000;
         height: 2px;
         width: 100%;
         border-radius: 2px;
@@ -82,18 +102,18 @@ $module: 'Navigation';
 
         h1 {
             font-size: 1.2rem;
-            margin: 0 0 0 0;
+            margin: 0 0 2rem 0;
             color: $white;
             @media (min-width: $tabletBreakpoint ) {
-                margin-bottom: 1rem;
+                margin-bottom: 3rem;
             }
         }
 
         li {
             color: $white;
-            margin-bottom: 1.5rem;
+            margin: 0 0 2.5rem 0;
             @media (min-width: $tabletBreakpoint ) {
-                margin-bottom: 2rem;
+                margin: 0 0 3rem 0;
             }
         }
 

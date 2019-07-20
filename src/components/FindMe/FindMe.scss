@@ -13,6 +13,7 @@ $module: 'FindMe';
         align-self: center;
         align-items: center;
         align-content: center;  
+        margin-bottom: 4rem;
     }
 
     &-externalLinks {
@@ -20,15 +21,16 @@ $module: 'FindMe';
         grid-template-columns: 100%;
         grid-gap: 20px;
         grid-auto-rows: minmax(100px, 1fr);
-
-        @media only screen and (min-width: 401px)  {
+        h4 {
+            font-size: 1.4rem;
+        }
+        @media only screen and (min-width: $mobileLargeBreakpoint)  {
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 40px;
             grid-auto-rows: minmax(150px, 1fr);
         }
-
-        @media only screen and (min-width: 1001px) {
-            grid-template-columns: repeat(3, 33%);
+        @media only screen and (min-width: $computerBreakpoint) {
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 
@@ -40,12 +42,11 @@ $module: 'FindMe';
         justify-content: center;
         width: 100%;
         text-align: center;
-        &:hover {
-        color: #282C34;
-        background-color: #C8E7EB;
-        }
         height: 100px;
-    
+        &:hover {
+            color: #282C34;
+            background-color: #C8E7EB;
+        }
         @media only screen and (min-width: $mobileLargeBreakpoint) {
             height: 150px;
         }

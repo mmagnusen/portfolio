@@ -15,9 +15,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+
         <Navigation />
 
-        <main>
           <Introduction />
 
           <Background />
@@ -30,10 +30,8 @@ class App extends Component {
 
           <FindMe />
 
-        </main>
-
         <Footer />
-
+        
       </div>
     );
   }
