@@ -13,25 +13,11 @@ body {
   color: $black;
 }
 
-main {
-  width: 90%;
-  margin: 0 auto;
-  float: none;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-row-gap: 40px;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  @media (min-width: $mobileLargeBreakpoint ) {
-    width: 80%;
-  }
-}
-
 a, h1, h2, h3, h4, h5, p {
   padding: 0;
   margin: 0;
 }
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -41,7 +27,7 @@ a, h1, h2, h3, h4, h5, p {
 }
 
 /***************************************
-    STYLES FOR FONTS
+    FONTS STYLES
 ****************************************/
 
 h3 {
@@ -60,17 +46,9 @@ p {
   }
 }
 
-li {
-  font-size: 20px;
-}
-
-a {
+a, a:visited {
   color: $pink;
   text-decoration: none;
-}
-
-a:visited {
-  color: $pink;
 }
 
 .section-title {

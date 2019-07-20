@@ -1,5 +1,7 @@
 import React from 'react';
 import ScrollableAnchor from 'react-scrollable-anchor';
+import { Link } from '../'
+import { LINK_TYPE } from '../../constants/linkType';
 import './Background.scss';
 
 const Background = () => (
@@ -10,7 +12,7 @@ const Background = () => (
                 <p>After a few stints working for different startups (Streetcar, which
                 was aqcuired by Zipcar, RateSetter - one of the largest peer-to-peer
                 lenders in the UK), and running my own business, I started working at
-                <a href="https://marvelapp.com/" target="blank"> Marvel</a>. I spent nearly two years doing everything from testing, bug
+                <Link to="https://marvelapp.com/" type={LINK_TYPE.EXTERNAL}> Marvel</Link>. I spent nearly two years doing everything from testing, bug
                 reports, data analysis and data visualisation. The great thing about
                 working in a startup is that everything is new and unchartered, meaning
                 you have the opportunity to dip your hand in everything.
@@ -24,7 +26,7 @@ const Background = () => (
                 <p>
                 I started off with Code Academy, learning the basics of HTML and CSS,
                 moving on to Treehouse and using Youtube, Stack, Medium and anything
-                else I could get my hands on. I found <a href="https://codebar.io/" target="blank">Codebar</a> and still religiously attend.
+                else I could get my hands on. I found <Link to="https://codebar.io/" type={LINK_TYPE.EXTERNAL}>Codebar</Link> and still religiously attend.
                 </p>
             </section>
         </section>
