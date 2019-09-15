@@ -28,11 +28,11 @@ const Projects = () => (
         </div>
         
         <div className='Projects-personal'>
-          <h3>Platfore</h3>
-          <p>Platfore is a community for podcast creators.</p>
+          <h3>Casperly</h3>
+          <p>Casperly is a website for food lovers to find and book restaurants in Manchester.</p>
             <p>The stack: the back-end is built in Python, using the Django framework to create an API.
               The front-end is built in React, consuming the Django API to manage authentication and data. </p>
-          <p>You can view the site <Link to="https://www.platfore.com/" type={LINK_TYPE.EXTERNAL}>here.</Link></p>
+          <p>You can view the site <Link to="https://www.casperly.com/" type={LINK_TYPE.EXTERNAL}>here.</Link></p>
         </div>
 
         <div className='Projects-personal'>
