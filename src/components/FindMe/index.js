@@ -32,9 +32,9 @@ const FindMe = () => (
                     </Link>
 
 
-                    <Link to="https://www.platfore.com/" type={LINK_TYPE.EXTERNAL}>
+                    <Link to="https://www.casperly.com/" type={LINK_TYPE.EXTERNAL}>
                         <div className="FindMe-darkBackground">
-                            <h4> Platfore</h4>
+                            <h4> Casperly</h4>
                         </div>
                     </Link>
 
