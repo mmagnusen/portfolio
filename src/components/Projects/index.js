@@ -39,7 +39,7 @@ const Projects = () => (
           <h3>Clearli</h3>
           <p>A resource for Developers to learn and practice testing front-end applications.</p>
           <p>Built with React.js.</p>
-          <p>You can view the site <Link to="clearli.netlify.com" type={LINK_TYPE.EXTERNAL}>here.</Link></p>
+          <p>You can view the site <Link to="https://clearli.netlify.com" type={LINK_TYPE.EXTERNAL}>here.</Link></p>
         </div>
 
       </div>

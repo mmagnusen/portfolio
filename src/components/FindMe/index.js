@@ -25,7 +25,7 @@ const FindMe = () => (
                         </div>
                     </Link>
 
-                    <Link to="clearli.netlify.com" type={LINK_TYPE.EXTERNAL}>
+                    <Link to="https://clearli.netlify.com" type={LINK_TYPE.EXTERNAL}>
                         <div className="FindMe-darkBackground">
                             <h4>Clearli</h4>
                         </div>
